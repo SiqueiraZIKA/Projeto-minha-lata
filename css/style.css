@@ -1,80 +1,66 @@
-*{
+body {
+    margin: 0%;
+    display: grid;
+    grid-template-areas:
+        "header header header"
+        "main main main"
+        "footer footer footer";
+    grid-gap: 0.5rem;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: 8rem 100vh 3rem;
+}
+
+#botao{
+    background-color: #48BAC6;
+    padding: 10px 25px;
+    border-radius: 12px;
+}
+
+#botao:hover{
+    background-color: #ffffff;
+}
+   
+#logo{
+    height: 75px;
+    width: 125px;
+
+}
+header {
+    grid-area: header;
+    background-color: #1C6C74;
+}
+
+
+main {
+    grid-area: main;
+    background-color: #ffffff;
+}
+
+footer {
+    grid-area: footer;
+    background-color: #383939;
+}
+
+nav ul {
+    list-style-type: none;
     padding: 0;
-    box-sizing: border-box;
-    margin: 0;
-}
-
-body{
-
-    background-color: rgb(250, 250, 250);
+    margin-top: 20px;
+    margin-left: 400px;;
     
 }
 
-
-/*classe*/
-.preto{
-    color:rgb(0, 0, 0);
-    font-family: Arial, Helvetica, sans-serif;
-    padding: 2.5%;
+nav ul li {
+    display: inline-block;
+    margin-right: 100px;
 }
 
-.azulclaro{
-    color:rgb(72,186,198);
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 25px;
-    margin-left: 55px;
-    
+nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 18px;
+    transition: color 0.3s ease;
 }
 
-.fundo{
-    background-color: rgb(28, 108, 116);
-}
-
-
-
-/*id*/
-#central{
-    text-align: center;
-}
-
-.divcabec{
-    background-color: rgb(28, 108, 116);
-    box-sizing: border-box;
-    padding: 15px;
-    width: 100%;
-    
-   
-  
-}
-
-.divnews{
-    background-color: rgb(255, 255, 255);
-    box-sizing: border-box;
-    padding: 10px;
-    width: 200px;
-    margin-top: -3% ;
-    margin-left: 200px;
-    border-radius: 15px;
-    flex-wrap: wrap;
-}
-
-
-.divprodutos{
-    background-color: rgb(255, 255, 255);
-    box-sizing: border-box;
-    padding: 20px;
-    width: 12%;
-    margin-top: -3% ;
-    margin-left: 500px;
-    border-radius: 15px;
-    flex-wrap: wrap;
-   
-}
-
-.divpai2{
-    background-color: rgb(83, 183, 193);
-    box-sizing: border-box;
-    padding: 500px;
-    width: 100%;
-    margin-top: 1%;
+nav ul li a:hover {
+    color: #48BAC6;
 }
